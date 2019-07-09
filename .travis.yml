@@ -11,6 +11,9 @@ matrix:
   allow_failures:
     - julia: nightly
   fast_finish: true
+cache:
+  directories:
+  - $TRAVIS_BUILD_DIR/test/data
 notifications:
   email: false
 after_success:
